@@ -10,22 +10,27 @@ package strategy;
  * @author ramazzotte
  */
 public class Venda {
-    private final Pessoa funcionario;
-     private final double valor;
+    private final Pessoa pessoa ;
+     private final double valorCompra;
  
-     public Venda(Pessoa funcionario, double valor) {
-          this.funcionario = funcionario;
-          this.valor = valor;
+     public Venda(Pessoa pessoa, double valor) {
+          this.pessoa = pessoa;
+          this.valorCompra = valor;
      }
  
      public double calculaDesconto() {
  
-          double comissao = 0.0;
+          double desconto = 0.0;
+          double valor1 = 0.0;
  
-          TipoDesconto cargo = this.funcionario.getTipoPessoa();
-          comissao = cargo.calculaDesconto(valor);
+          TipoPessoa tp = this.pessoa.getTipoPessoa();
+          TipoPagamento t = this.pessoa.getTipoPagamento();
+          valor1 = tp.calculaDesconto(valorCompra) ;
+          desconto =  t.calculaDesconto(valor1);
+          
+          
  
-          return comissao;
+          return desconto;
  
      }
 }

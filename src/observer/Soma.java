@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package observer1;
+package observer;
 /**
  *
  * @author ramazzotte
@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 public class Soma extends Observable implements Runnable {
 
-    private int num;
+    private double num;
     public static Soma instance = null;
 
     private Soma() {
@@ -30,20 +30,21 @@ public class Soma extends Observable implements Runnable {
         return instance;
     }
 
-    public void setNum() {
-        num++;
+    public void setNum(double num) {
+        this.num = num;
+      //  num++;
         setChanged(); // marca esse objeto observável como alterado  
         notifyObservers(); // notifica todos os observadores que esse objeto foi alterado
     }
 
-    public int getNum() {
+    public double getNum() {
         return num;
     }
 
     private void somar() {
 
         while (true) {
-            setNum();
+            setNum(num);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException ex) {

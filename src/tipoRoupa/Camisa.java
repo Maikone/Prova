@@ -5,26 +5,17 @@
  */
 package tipoRoupa;
 
-import Decorator.Compra;
-import Decorator.ProdutoRoupa;
 import Decorator.RoupaDecorator;
-
-
 
 /**
  *
  * @author michael
  */
-public class blusa extends RoupaDecorator{
-
-    
+public class Camisa extends RoupaDecorator{
     public double getCusto() {
-        return 30;
+        return 1500;
     }
     public String getDescricaoDoProduto() {
-        return "Blusa de Frio";
+        return "Camisa DSQUARED2 ";
     }
-
-  
-    
 }

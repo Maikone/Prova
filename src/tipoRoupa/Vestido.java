@@ -11,11 +11,11 @@ import Decorator.RoupaDecorator;
  *
  * @author michael
  */
-public class calca extends RoupaDecorator{
+public class Vestido extends RoupaDecorator{
     public double getCusto() {
-        return 50;
+        return 90;
     }
     public String getDescricaoDoProduto() {
-        return "Calca Jeans";
+        return "Vestido de Seda";
     }
 }

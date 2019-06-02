@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package observer1;
+package observer;
 
 /**
  *
@@ -12,15 +12,15 @@ package observer1;
 import java.util.Observable;
 import java.util.Observer;
 
-public class Impar implements Observer {
+public class Compra1K implements Observer {
 
     private Soma s = Soma.getInstance();
 
     @Override
     public void update(Observable o, Object arg) {
 
-        if (s.getNum() % 2 == 1) {
-            System.out.println(s.getNum() + " é Ímpar");
+        if (s.getNum() >= 1000 && s.getNum() <10000) {
+            System.out.println("Gerente A sendo chamado, cliente classificado pela compra de 1000");
         }
 
     }

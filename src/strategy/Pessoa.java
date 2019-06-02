@@ -12,9 +12,17 @@ package strategy;
 public class Pessoa {
 
     private String nome;
-    //private double valorCompra;
-    private TipoDesconto tipoPessoa;
+    private double valorCompra;
+    private TipoPessoa tipoPessoa;
+    private TipoPagamento tipoPagamento;
 
+    public double getValorCompra() {
+        return valorCompra;
+    }
+
+    public void setValorCompra(double valorCompra) {
+        this.valorCompra = valorCompra;
+    }  
     public String getNome() {
         return nome;
     }
@@ -22,15 +30,21 @@ public class Pessoa {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-   
-
-    public TipoDesconto getTipoPessoa() {
+    public TipoPessoa getTipoPessoa() {
         return tipoPessoa;
     }
 
-    public void setTipoPessoa(TipoDesconto tipoPessoa) {
+    public void setTipoPessoa(TipoPessoa tipoPessoa) {
         this.tipoPessoa = tipoPessoa;
     }
+
+    public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
+    }
+    
 
 }

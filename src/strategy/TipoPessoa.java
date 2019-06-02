@@ -9,7 +9,7 @@ package strategy;
  *
  * @author ramazzotte
  */
-public enum TipoDesconto implements Desconto {
+public enum TipoPessoa implements Desconto {
     
       
     FISICA {
@@ -21,7 +21,8 @@ public enum TipoDesconto implements Desconto {
     JURIDICA {
          @Override
          public double calculaDesconto(double valor) {
-              return valor = valor -(valor * 0.10) ;
+             return valor = valor -(valor * 0.10) ;
+             
          }
     },
       CARTAOCREDITO {
