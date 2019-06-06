@@ -7,14 +7,14 @@ package observer;
 
 /**
  *
- * @author ramazzotte
+ * @author michael.
  */
 import java.util.Observable;
 import java.util.Observer;
 
 public class Compra1K implements Observer {
 
-    private Soma s = Soma.getInstance();
+    private Custo s = Custo.getInstance();
 
     @Override
     public void update(Observable o, Object arg) {

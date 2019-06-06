@@ -7,7 +7,7 @@ package strategy;
 
 /**
  *
- * @author ramazzotte
+ * @author michael
  */
 public interface Desconto {
     public double calculaDesconto(double valor);

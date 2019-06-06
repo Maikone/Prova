@@ -7,7 +7,7 @@ package strategy;
 
 /**
  *
- * @author ramazzotte
+ * @author michael
  */
 public enum TipoPessoa implements Desconto {
     

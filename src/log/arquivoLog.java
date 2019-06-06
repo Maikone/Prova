@@ -36,7 +36,7 @@ public class arquivoLog {
     private void escreverLog(String erros) {
         
         try {
-            arquivo = new File("LogSistema");
+            arquivo = new File("LogSistema.txt");
             fileReader = new FileReader(arquivo);
             bufferedReader = new BufferedReader(fileReader);
             Vector texto = new Vector();

@@ -10,7 +10,7 @@ import java.util.Scanner;
 import log.arquivoLog;
 import observer.Compra10K;
 import observer.Compra1K;
-import observer.Soma;
+import observer.Custo;
 import strategy.Pessoa;
 import strategy.TipoPagamento;
 import strategy.TipoPessoa;
@@ -53,7 +53,7 @@ public class ProvaPOO {
                 + "Jaqueta de R$ 12800 = 1\n"
                 + "Calça de R$ 50= 2\n"
                 + "Vestido de R$ 90  = 3\n"
-                + "Camisa de R$ 1500 ");
+                + "Camisa de R$ 1500 = 4 ");
 
         for (int i = 1; i < 5; i++) {
             int op = sc.nextInt();
@@ -111,7 +111,7 @@ public class ProvaPOO {
         
           
         
-        Soma s = Soma.getInstance();
+        Custo s = Custo.getInstance();
 
         s.setNum(r.getCusto());
         Compra10K par = new Compra10K();

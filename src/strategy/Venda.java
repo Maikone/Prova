@@ -7,7 +7,7 @@ package strategy;
 
 /**
  *
- * @author ramazzotte
+ * @author michael
  */
 public class Venda {
     private final Pessoa pessoa ;
